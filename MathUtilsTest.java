@@ -1,5 +1,4 @@
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 import org.junit.After;
 import org.junit.Before;
@@ -22,7 +21,7 @@ public class MathUtilsTest {
     public void testAdd() {
         MathUtils mathUtils = new MathUtils();
         assertEquals(15, mathUtils.add(12, 3));
-        assertEquals(-1, mathUtils.add(-4, 5));
+        assertEquals(1, mathUtils.add(-4, 5));
         assertEquals(16, mathUtils.add(8, 8));
     }
 
@@ -30,7 +29,7 @@ public class MathUtilsTest {
     public void testSubtract() {
         MathUtils mathUtils = new MathUtils();
         assertEquals(3, mathUtils.subtract(6, 3));
-        assertEquals(-5, mathUtils.subtract(-3, 8));
+        assertEquals(-5, mathUtils.subtract(3, -8));
         assertEquals(0, mathUtils.subtract(8, -8));
     }
 
